@@ -1,0 +1,53 @@
+Working Directory :
+
+git init 
+git add projectName    						 =  to make statge (add)
+git reset projectName  						 =  to reset stage 
+dir /AH               						 =  for cheching file in stage 
+git commit -m "initiatl commit"     		 =  for commit the local machine and put comment 
+git log										 =  to view the commit log 
+
+Central Repository :
+create a shared repository on other location (d:\shared-repo,git)
+mkdir shared-repo.git						 =  make one folder and put name .git 
+
+goto this folder 
+git init --bare 							 =  and init the git  bare means empty repositort 
+
+
+Working Directory :
+git remote add origin4 d:\shared-repo,git   = origin4 is the Aliease name of URL
+git remote -v      							= it shows the remote view 
+git push origin4 master                     = for pushing at remote loaction 
+
+
+Checkout at difference location :
+mkedir liase-repo
+go to this location
+git init
+git remote add origin4 d:\shared-repo,git   = connect to local n give alisae name as orini 4
+git fetch origin4							= it will fetch the content of master but it will not seen in folder 
+git merge origin4/master                    = it will merge the file with master now u can see the file 
+
+for Craeting a branch in working directory 
+git branch littlr-feature
+git branch												to check all the branch name 
+git checkout little-feature								to go new branch
+git add firstGridle/readme.txt							add to the new brqanch 
+git status
+git log
+git commit -m "initiatl commit"     		 =  for commit the local machine and put comment 
+git log										 =  to view the commit log 
+
+
+git chechkout master                            = go to master branch and check the new file added inn 
+												little feature branchb it should not present 
+git merge little-feature					= for merging little feature branch content in master
+
+git branch -d little-feature				=	to delete the little-feature branch 
+git branch 									=   to check all the branch 
+
+
+
+
+
